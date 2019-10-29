@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF32E559-DD36-4F74-A90C-5E2C68196B1B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SimuladorDeBiblioteca</RootNamespace>
+    <AssemblyName>SimuladorDeBiblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnimacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnimacion.Designer.cs">
+      <DependentUpon>FormAnimacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarCodigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarCodigo.Designer.cs">
+      <DependentUpon>FormBuscarCodigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarCodigoAnimacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarCodigoAnimacion.Designer.cs">
+      <DependentUpon>FormBuscarCodigoAnimacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarCodigoCiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarCodigoCiencia.Designer.cs">
+      <DependentUpon>FormBuscarCodigoCiencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarCodigoHistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarCodigoHistoria.Designer.cs">
+      <DependentUpon>FormBuscarCodigoHistoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarCodigoRomance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarCodigoRomance.Designer.cs">
+      <DependentUpon>FormBuscarCodigoRomance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarNombre.Designer.cs">
+      <DependentUpon>FormBuscarNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarNombreAnimacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarNombreAnimacion.Designer.cs">
+      <DependentUpon>FormBuscarNombreAnimacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarNombreCiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarNombreCiencia.Designer.cs">
+      <DependentUpon>FormBuscarNombreCiencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarNombreHistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarNombreHistoria.Designer.cs">
+      <DependentUpon>FormBuscarNombreHistoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarNombreRomance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarNombreRomance.Designer.cs">
+      <DependentUpon>FormBuscarNombreRomance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarOpciones.Designer.cs">
+      <DependentUpon>FormBuscarOpciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarOpcionesAnimacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarOpcionesAnimacion.Designer.cs">
+      <DependentUpon>FormBuscarOpcionesAnimacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarOpcionesCiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarOpcionesCiencia.Designer.cs">
+      <DependentUpon>FormBuscarOpcionesCiencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarOpcionesHistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarOpcionesHistoria.Designer.cs">
+      <DependentUpon>FormBuscarOpcionesHistoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarOpcionesRomance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarOpcionesRomance.Designer.cs">
+      <DependentUpon>FormBuscarOpcionesRomance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCiencia.Designer.cs">
+      <DependentUpon>FormCiencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminar.Designer.cs">
+      <DependentUpon>FormEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEliminarAnimacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminarAnimacion.Designer.cs">
+      <DependentUpon>FormEliminarAnimacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEliminarCiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminarCiencia.Designer.cs">
+      <DependentUpon>FormEliminarCiencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEliminarHistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminarHistoria.Designer.cs">
+      <DependentUpon>FormEliminarHistoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEliminarRomance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminarRomance.Designer.cs">
+      <DependentUpon>FormEliminarRomance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEspiritual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEspiritual.Designer.cs">
+      <DependentUpon>FormEspiritual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistoria.Designer.cs">
+      <DependentUpon>FormHistoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngresarAnimacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngresarAnimacion.Designer.cs">
+      <DependentUpon>FormIngresarAnimacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngresarCiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngresarCiencia.Designer.cs">
+      <DependentUpon>FormIngresarCiencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngresarEspirirual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngresarEspirirual.Designer.cs">
+      <DependentUpon>FormIngresarEspirirual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngresarHistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngresarHistoria.Designer.cs">
+      <DependentUpon>FormIngresarHistoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngresarRomance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngresarRomance.Designer.cs">
+      <DependentUpon>FormIngresarRomance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRomance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRomance.Designer.cs">
+      <DependentUpon>FormRomance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAnimacion.resx">
+      <DependentUpon>FormAnimacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarCodigo.resx">
+      <DependentUpon>FormBuscarCodigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarCodigoAnimacion.resx">
+      <DependentUpon>FormBuscarCodigoAnimacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarCodigoCiencia.resx">
+      <DependentUpon>FormBuscarCodigoCiencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarCodigoHistoria.resx">
+      <DependentUpon>FormBuscarCodigoHistoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarCodigoRomance.resx">
+      <DependentUpon>FormBuscarCodigoRomance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarNombre.resx">
+      <DependentUpon>FormBuscarNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarNombreAnimacion.resx">
+      <DependentUpon>FormBuscarNombreAnimacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarNombreCiencia.resx">
+      <DependentUpon>FormBuscarNombreCiencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarNombreHistoria.resx">
+      <DependentUpon>FormBuscarNombreHistoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarNombreRomance.resx">
+      <DependentUpon>FormBuscarNombreRomance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarOpciones.resx">
+      <DependentUpon>FormBuscarOpciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarOpcionesAnimacion.resx">
+      <DependentUpon>FormBuscarOpcionesAnimacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarOpcionesCiencia.resx">
+      <DependentUpon>FormBuscarOpcionesCiencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarOpcionesHistoria.resx">
+      <DependentUpon>FormBuscarOpcionesHistoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarOpcionesRomance.resx">
+      <DependentUpon>FormBuscarOpcionesRomance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCiencia.resx">
+      <DependentUpon>FormCiencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminar.resx">
+      <DependentUpon>FormEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminarAnimacion.resx">
+      <DependentUpon>FormEliminarAnimacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminarCiencia.resx">
+      <DependentUpon>FormEliminarCiencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminarHistoria.resx">
+      <DependentUpon>FormEliminarHistoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminarRomance.resx">
+      <DependentUpon>FormEliminarRomance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEspiritual.resx">
+      <DependentUpon>FormEspiritual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHistoria.resx">
+      <DependentUpon>FormHistoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngresarAnimacion.resx">
+      <DependentUpon>FormIngresarAnimacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngresarCiencia.resx">
+      <DependentUpon>FormIngresarCiencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngresarEspirirual.resx">
+      <DependentUpon>FormIngresarEspirirual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngresarHistoria.resx">
+      <DependentUpon>FormIngresarHistoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngresarRomance.resx">
+      <DependentUpon>FormIngresarRomance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRomance.resx">
+      <DependentUpon>FormRomance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
